@@ -14,5 +14,6 @@ Vagrant.configure("2") do |config|
     cfg.vm.network "private_network", ip: "192.168.1.10"
     cfg.vm.network "forwarded_port", guest: 22, host: 60010, auto_correct: true, id: "ssh"
     cfg.vm.synced_folder "../data", "/vagrant", disabled: true
+    cfg.vm.provision "shell", path: "install_pkg.sh" ## add provisioning script
   end
 end
