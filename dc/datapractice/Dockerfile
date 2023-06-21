@@ -8,6 +8,8 @@ RUN npm install
 
 COPY . .
 
+ENV PORT 80
+
 EXPOSE 80
 
 # VOLUME ["/app/node_modules"]
