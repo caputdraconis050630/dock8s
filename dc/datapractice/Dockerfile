@@ -10,7 +10,7 @@ COPY . .
 
 ENV PORT 80
 
-EXPOSE 80
+EXPOSE $PORT
 
 # VOLUME ["/app/node_modules"]
 
